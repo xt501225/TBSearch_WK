@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+//讯飞语音识别头文件
 #import <iflyMSC/IFlyDataUploader.h>
-
 #import "iflyMSC/IFlySpeechRecognizer.h"
 
 

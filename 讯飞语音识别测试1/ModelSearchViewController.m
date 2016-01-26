@@ -7,11 +7,10 @@
 //
 
 #import "ModelSearchViewController.h"
-
+//续费语音识别用到的 头文件
 #import <QuartzCore/QuartzCore.h>
 #import <AVFoundation/AVAudioSession.h>
 #import <AudioToolbox/AudioSession.h>
-
 
 #import <iflyMSC/IFlyContact.h>
 #import <iflyMSC/IFlyDataUploader.h>
@@ -41,9 +40,7 @@
     [IFlySpeechUtility createUtility:initString];
     _iflySpeechUnderstander = [IFlySpeechUnderstander sharedInstance];
     _iflySpeechUnderstander.delegate = self;
-    
-    
-    
+ 
     //历史记录数组
     NSArray *array = [[NSArray alloc]initWithObjects:@"广州",@"深圳",@"梅州",@"东莞",@"潮汕",@"肇庆",@"四会",@"佛山",@"湛江",@"江门",@"阳江",@"珠海", nil];
     searchHistoryDataList = array;

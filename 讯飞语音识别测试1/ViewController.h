@@ -8,26 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-
-
-
-
-
-//添加语音识别代理
 @interface ViewController : UIViewController<UISearchBarDelegate>
-
-
 
 
 //文本框用来显示识别结果
 @property (weak, nonatomic) IBOutlet UITextField *textField;
-
-
-
-
-
-
-
 
 
 

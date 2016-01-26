@@ -8,18 +8,11 @@
 
 #import "ViewController.h"
 
-
-
 //自定义搜索框
 #import "HWSearchBar.h"
 
 //搜索视图
 #import "ModelSearchViewController.h"
-
-
-/
-
-
 
 
 @interface ViewController ()
@@ -31,10 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-
-    
-       
+ 
     UISearchBar *search = [[UISearchBar alloc] initWithFrame:CGRectMake(30, 80, 300, 30)];
     search.delegate = self;
     
