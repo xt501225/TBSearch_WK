@@ -1,0 +1,48 @@
+//
+//  讯飞语音识别测试1.pch
+//  讯飞语音识别测试1
+//
+//  Created by 王克 on 16/1/22.
+//  Copyright © 2016年 车益佰. All rights reserved.
+//
+
+#ifndef ________1_pch
+#define ________1_pch
+
+
+
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+
+//讯飞语音
+#import <iflyMSC/IFlyRecognizerView.h>
+#import <iflyMSC/IFlyRecognizerViewDelegate.h>
+#import <iflyMSC/IFlySpeechError.h>
+
+// UIview 扩展类目
+#import "UIView+Extension.h"
+
+//导入AFN
+#import "AFNetworking.h"
+#import "MJRefresh.h"
+#import "MBProgressHUD.h"
+// 自动布局库  （不断更新，需要更新库文件）
+#import "UIView+SDAutoLayout.h"
+
+//
+#import "MJExtension.h"
+
+
+//1.自定义3RGB颜色
+#define WKRBGColor(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+
+//2.自定义 打印方法
+#ifdef DEBUG // 处于开发阶段
+#define WKNSLog(...) NSLog(__VA_ARGS__)
+#else // 处于发布阶段
+#define WKNSLog(...)
+#endif
+
+#endif /* ________1_pch */
